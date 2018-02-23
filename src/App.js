@@ -24,7 +24,6 @@ class App extends Component {
                   headerTitle="Mycroft Helper"
                   placeholder="Type away..."
                   customDelay="500"
-                  floating="true"
                 />
               </ThemeProvider>
             </div>

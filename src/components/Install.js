@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-var Linkify = require('react-linkify');
 
 
 class Install extends Component {
