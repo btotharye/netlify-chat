@@ -1,4 +1,5 @@
-
+import Install from '../components/Install';
+import React from 'react';
 const steps = [
   {
     id: '1',
@@ -20,12 +21,12 @@ const steps = [
   },
   {
     id: 'what-mycroft-2',
-    message: 'This is open source software which can be freely remixed, extended, and improved. Mycroft may be used in anything from a science project to an enterprise software application.  For more information please visit',
+    message: 'This is open source software which can be freely remixed, extended, and improved. Mycroft may be used in anything from a science project to an enterprise software application.',
     trigger: 'what-mycroft-link'
   },
   {
     id: 'what-mycroft-link',
-    message: 'https://mycroft.ai/',
+    component: <Install />,
     trigger: '1'
   },
   {
