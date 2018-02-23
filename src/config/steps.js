@@ -1,5 +1,6 @@
 import WhatMycroft from '../components/WhatMycroft';
 import InstallMycroft from '../components/InstallMycroft';
+import Documentation from '../components/Documentation';
 import React from 'react';
 const steps = [
   {
@@ -13,6 +14,7 @@ const steps = [
       { value: 'What is Mycroft AI?', label: 'What Is Mycroft', trigger: 'what-mycroft' },
       { value: 'Skills Available', label: 'Skills Available', trigger: 'skills-available' },
       { value: 'How To Install Mycroft AI', label: 'How-to Install', trigger: 'install' },
+      { value: 'Documentation', label: 'Documentation', trigger: 'documentation' },
     ],
   },
   {
@@ -43,6 +45,11 @@ const steps = [
   {
     id: 'install-comp',
     component: <InstallMycroft />,
+    trigger: '1'
+  },
+  {
+    id: 'documentation',
+    component: <Documentation />,
     trigger: '1'
   },
 ];
