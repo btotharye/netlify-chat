@@ -1,6 +1,7 @@
 import WhatMycroft from '../components/WhatMycroft';
 import InstallMycroft from '../components/InstallMycroft';
 import Documentation from '../components/Documentation';
+import Mark2 from '../components/Mark2';
 import React from 'react';
 const steps = [
   {
@@ -15,6 +16,7 @@ const steps = [
       { value: 'Skills Available', label: 'Skills Available', trigger: 'skills-available' },
       { value: 'How To Install Mycroft AI', label: 'How-to Install', trigger: 'install' },
       { value: 'Documentation', label: 'Documentation', trigger: 'documentation' },
+      { value: 'Mark 2', label: 'Mark 2 Information', trigger: 'mark2' },
     ],
   },
   {
@@ -50,6 +52,16 @@ const steps = [
   {
     id: 'documentation',
     component: <Documentation />,
+    trigger: '1'
+  },
+  {
+    id: 'mark2',
+    message: 'The newest hardware coming out for Mycroft AI is the Mark 2.  It will feature a screen and other cool features. See the link below for more information and to back it on kickstarter.',
+    trigger: 'mark2-link'
+  },
+  {
+    id: 'mark2-link',
+    component: <Mark2 />,
     trigger: '1'
   },
 ];
