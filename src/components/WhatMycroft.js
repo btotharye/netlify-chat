@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-class Install extends Component {
+class WhatMycroft extends Component {
   render(){
     return(
       <div>
@@ -12,4 +12,4 @@ class Install extends Component {
   }
 }
 
-export default Install;
+export default WhatMycroft;

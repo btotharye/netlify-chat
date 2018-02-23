@@ -1,4 +1,5 @@
-import Install from '../components/Install';
+import WhatMycroft from '../components/WhatMycroft';
+import InstallMycroft from '../components/InstallMycroft';
 import React from 'react';
 const steps = [
   {
@@ -11,7 +12,7 @@ const steps = [
     options: [
       { value: 'What is Mycroft AI?', label: 'What Is Mycroft', trigger: 'what-mycroft' },
       { value: 'Skills Available', label: 'Skills Available', trigger: 'skills-available' },
-      { value: 'How To Install Mycroft AI', label: 'Install', trigger: 'install' },
+      { value: 'How To Install Mycroft AI', label: 'How-to Install', trigger: 'install' },
     ],
   },
   {
@@ -26,7 +27,7 @@ const steps = [
   },
   {
     id: 'what-mycroft-link',
-    component: <Install />,
+    component: <WhatMycroft />,
     trigger: '1'
   },
   {
@@ -36,8 +37,13 @@ const steps = [
   },
   {
     id: 'install',
-    message: 'For detailed information on installing mycroft please visit https://mycroft.ai/get-mycroft',
-    trigger: '1',
+    message: 'Mycroft supports a lot of different platforms.  Please see the hyperlink below for more information.',
+    trigger: 'install-comp',
+  },
+  {
+    id: 'install-comp',
+    component: <InstallMycroft />,
+    trigger: '1'
   },
 ];
 
