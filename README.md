@@ -4,3 +4,6 @@ A chatbot to help with basic mycroft questions and information.  Based on react 
 # Live Preview
 https://btotharye.github.io/mycroft-chat/
 
+# Screenshot
+![Screenshot](bot_demo.JPG?raw=true)
+
